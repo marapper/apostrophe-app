@@ -8,6 +8,39 @@ Install dependencies: `npm install`
 
 Run `npm run dev` to build the Apostrophe UI and start the site up. Remember, this is during alpha development, so we're all in "dev mode." The `dev` script will watch for saves in client-side CSS and Javascript and trigger a build and page refresh if they are detected. It will also restart the app when server-side code is saved.
 
+## что из второй версии уже интегрировано
+
+CLI () https://www.npmjs.com/package/apostrophe-cli
+headless https://www.npmjs.com/package/apostrophe-headless
+
+piecesexport/import
+https://www.npmjs.com/package/apostrophe-pieces-export
+https://www.npmjs.com/package/apostrophe-pieces-import
+
+???super admin https://www.npmjs.com/package/apostrophe-users-superadmin
+
+## что есть в 2 версии, но не факт что совместимо с 3
+
+поддержка мультисайтовости https://www.npmjs.com/package/apostrophe-multisite
+
+ужасный интерфейс, но с зачатками того, что есть в 3
+
+web hooks https://www.npmjs.com/package/apostrophe-external-notifications
+
+набор пермишнов и воркфлоу публикации
+https://www.npmjs.com/package/apostrophe-workflow
+
+elasticsearch для поиска
+https://www.npmjs.com/package/apostrophe-elasticsearch
+
+tiptap как редактор https://www.npmjs.com/package/apostrophe-tiptap-rich-text-widgets
+
+виджет форм https://www.npmjs.com/package/apostrophe-forms
+виджет ссылок https://www.npmjs.com/package/apostrophe-link-widgets
+пермассылки на контент в Rich https://www.npmjs.com/package/apostrophe-rich-text-permalinks
+
+структура страницы https://www.npmjs.com/package/apostrophe-area-structure
+
 ## Making it your own
 
 This boilerplate is designed so you can install and start running it right away. If you are starting a project that will go into production one day, there are a few things you should be sure to check:
