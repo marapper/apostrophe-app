@@ -1,0 +1,30 @@
+{#
+  This is an example home page template. It inherits and extends a layout template
+  that lives in the top-level views/ folder for convenience
+#}
+
+{% extends "layout.html" %}
+
+{% block main %}
+  <section class="bp-welcome">
+    <h1 class="bp-welcome__headline">
+      Welcome to Sber.ru
+    </h1>
+
+    <div class="bp-welcome__area">
+      <h2>Область 1</h2>
+      {% area data.page, 'main' %}
+
+      <h2>Область 2</h2>
+      {% area data.page, 'sidebar' %}
+    </div>
+
+    <h2>Картинка</h2>
+    {% area data.page, 'image' with {
+      '@apostrophecms/image': {
+        sizes: '(min-width: 600px) 45vw, (min-width: 1140px) 530px'
+      }
+    } %}
+
+  </section>
+{% endblock %}

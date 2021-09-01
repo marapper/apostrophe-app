@@ -36,7 +36,8 @@ module.exports = {
               ]
             },
             '@apostrophecms/image': {},
-            '@apostrophecms/video': {}
+            '@apostrophecms/video': {},
+            'two-columns-widget': {}
           }
         }
       }

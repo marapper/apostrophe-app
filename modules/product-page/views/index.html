@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% import '@apostrophecms/pager:macros.html' as pager with context %}
+
+{% block main %}
+    <h1>It's all products {{ data.page.title }}</h1>
+
+    {% for article in data.pieces %}
+        <h2>It's product {{ article.title }}</h2>
+    {% endfor  %}
+
+    {{ pager.render({
+        page: data.currentPage,
+        total: data.totalPages,
+        class: 'blog-pager'
+    }, data.url) }}
+{% endblock %}
